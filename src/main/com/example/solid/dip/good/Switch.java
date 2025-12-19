@@ -1,0 +1,13 @@
+package com.example.solid.dip.good;
+
+public class Switch {
+    private final Switchable device;
+
+    public Switch(Switchable device) {
+        this.device = device;
+    }
+
+    public void operate() {
+        device.turnOn();
+    }
+}
